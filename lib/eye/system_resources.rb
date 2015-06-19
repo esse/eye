@@ -99,5 +99,5 @@ class Eye::SystemResources
   end
 
   # Setup global sigar singleton here
-  Cache.supervise_as(:system_resources_cache)
+  Cache.supervise(as: :system_resources_cache)
 end
